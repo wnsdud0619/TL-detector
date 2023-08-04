@@ -1,6 +1,8 @@
 #MODEL FILE download   
 https://drive.google.com/drive/folders/1alwd61B8s70ZzLMnUld1R-m2jFNpqeH_?usp=sharing   
 
+#docker images
+관리자에게 문의
 
 check model path, topic name, gpu memory   
 
