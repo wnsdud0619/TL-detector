@@ -1,0 +1,41 @@
+IP Address = 10.40.4.238
+OS = Ubuntu 18.04.5 LTS(64-bit)
+Architecture = x86_64
+CPU = 16-core, Intel(R) Core(TM) i7-9800X CPU @ 3.80GHz
+Mainboard = Micro-Star International Co., Ltd., X299 SLI PLUS (MS-7A93)
+RAM = 31.0 GB
+
+Gcc version = 7.5.0
+G++ version = 7.5.0
+Cmake version = 3.10.2
+Python version = 2.7.17
+pip version = 19.1
+gast version = 0.2.2
+protobuf version = 3.6.1
+virtualenv version = 20.10.0
+numpy version = 1.16.6
+setuptools version = 41.1.0
+scipy version = 1.2.3
+Cython version = 0.29.24
+opencv-python isn't installed
+OpenCV version = 3.2.0
+ujson version = 2.0.1
+Pillow version = 6.2.2
+scikit-learn version = 0.24.2
+matplotlib version = 2.2.5
+gnuplot version = 5.2
+ghostscript version = 9.26
+pdfcrop version = 1.38
+Docker version = 20.10.10
+ROS version = melodic
+tensorflow-gpu version = 1.14.0
+
+CUDA version = 10.0,V10.0.130
+cuDNN version = 7.6.5
+
+Number of GPUs = Detected 1 CUDA Capable device(s)
+
+GPU model = NVIDIA GeForce RTX 2080 Ti
+GPU RAM = 10.7 GB
+Memory Bus width = 352-bit
+CUDA cores = 4352 cores

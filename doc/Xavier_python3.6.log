@@ -1,0 +1,1152 @@
+xavier@xavier:/media/xavier/ssd/Trafficlight$ run_tl
+2021-11-15 16:56:14.680797: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2021-11-15 16:56:19.290492: W tensorflow/core/platform/profile_utils/cpu_utils.cc:98] Failed to find bogomips in /proc/cpuinfo; cannot determine CPU frequency
+2021-11-15 16:56:19.291545: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2ecb8900 executing computations on platform Host. Devices:
+2021-11-15 16:56:19.291659: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2021-11-15 16:56:19.297467: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2021-11-15 16:56:19.378319: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2021-11-15 16:56:19.378845: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2d1af820 executing computations on platform CUDA. Devices:
+2021-11-15 16:56:19.378930: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Xavier, Compute Capability 7.2
+2021-11-15 16:56:19.379491: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2021-11-15 16:56:19.379619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Xavier major: 7 minor: 2 memoryClockRate(GHz): 1.5
+pciBusID: 0000:00:00.0
+2021-11-15 16:56:19.379789: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2021-11-15 16:56:19.384794: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2021-11-15 16:56:19.387515: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2021-11-15 16:56:19.388538: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2021-11-15 16:56:19.391412: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2021-11-15 16:56:19.393565: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2021-11-15 16:56:19.399959: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2021-11-15 16:56:19.400386: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2021-11-15 16:56:19.400752: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2021-11-15 16:56:19.400867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2021-11-15 16:56:19.401047: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2021-11-15 16:56:20.101375: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-15 16:56:20.101481: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2021-11-15 16:56:20.101550: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2021-11-15 16:56:20.102096: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2021-11-15 16:56:20.102355: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2021-11-15 16:56:20.102492: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7879 MB memory) -> physical GPU (device: 0, name: Xavier, pci bus id: 0000:00:00.0, compute capability: 7.2)
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/conv1
+None
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3
+None
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3
+None
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3
+None
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3
+None
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3
+None
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1
+<function activation_fn at 0x7f7e925840>
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2
+None
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3
+None
+model/detection/decoder/M5
+None
+model/detection/decoder/M4
+None
+model/detection/decoder/M3
+None
+model/detection/decoder/P5
+None
+model/detection/decoder/P4
+None
+model/detection/decoder/P3
+None
+model/detection/decoder/P6
+None
+model/detection/decoder/P7
+<function activation_fn at 0x7f7e925840>
+model/detection/decoder/P3-up
+<function activation_fn at 0x7f7e925840>
+model/detection/decoder/P4-up
+<function activation_fn at 0x7f7e925840>
+model/detection/decoder/P5-up
+<function activation_fn at 0x7f7e925840>
+model/detection/decoder/P6-up
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv1
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv2
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv3
+None
+model/dgist_tl/decoder/head/conv4
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv1
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv2
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv3
+None
+model/dgist_tl/decoder/head/conv4
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv1
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv2
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv3
+None
+model/dgist_tl/decoder/head/conv4
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv1
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv2
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv3
+None
+model/dgist_tl/decoder/head/conv4
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv1
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv2
+<function activation_fn at 0x7f7e925840>
+model/dgist_tl/decoder/head/conv3
+None
+model/dgist_tl/decoder/head/conv4
+model/encoder/resnet_v1_50/conv1/weights exists
+model/encoder/resnet_v1_50/conv1/weights exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block2/unit_4/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_4/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_5/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block3/unit_6/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block4/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block5/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/weights exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv1/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/weights exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv2/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/weights exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/beta exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/gamma exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/encoder/resnet_v1_50/block6/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance exists
+model/detection/decoder/M5/weights exists
+model/detection/decoder/M5/weights exists
+model/detection/decoder/M5/biases exists
+model/detection/decoder/M5/biases exists
+model/detection/decoder/M4/weights exists
+model/detection/decoder/M4/weights exists
+model/detection/decoder/M4/biases exists
+model/detection/decoder/M4/biases exists
+model/detection/decoder/M3/weights exists
+model/detection/decoder/M3/weights exists
+model/detection/decoder/M3/biases exists
+model/detection/decoder/M3/biases exists
+model/detection/decoder/P5/weights exists
+model/detection/decoder/P5/weights exists
+model/detection/decoder/P5/biases exists
+model/detection/decoder/P5/biases exists
+model/detection/decoder/P4/weights exists
+model/detection/decoder/P4/weights exists
+model/detection/decoder/P4/biases exists
+model/detection/decoder/P4/biases exists
+model/detection/decoder/P3/weights exists
+model/detection/decoder/P3/weights exists
+model/detection/decoder/P3/biases exists
+model/detection/decoder/P3/biases exists
+model/detection/decoder/P6/weights exists
+model/detection/decoder/P6/weights exists
+model/detection/decoder/P6/biases exists
+model/detection/decoder/P6/biases exists
+model/detection/decoder/P7/weights exists
+model/detection/decoder/P7/weights exists
+model/detection/decoder/P7/biases exists
+model/detection/decoder/P7/biases exists
+model/detection/decoder/BatchNorm/beta exists
+model/detection/decoder/BatchNorm/beta exists
+model/detection/decoder/BatchNorm/gamma exists
+model/detection/decoder/BatchNorm/gamma exists
+model/detection/decoder/BatchNorm/moving_mean exists
+model/detection/decoder/BatchNorm/moving_mean exists
+model/detection/decoder/BatchNorm/moving_variance exists
+model/detection/decoder/BatchNorm/moving_variance exists
+model/detection/decoder/BatchNorm_1/beta exists
+model/detection/decoder/BatchNorm_1/beta exists
+model/detection/decoder/BatchNorm_1/gamma exists
+model/detection/decoder/BatchNorm_1/gamma exists
+model/detection/decoder/BatchNorm_1/moving_mean exists
+model/detection/decoder/BatchNorm_1/moving_mean exists
+model/detection/decoder/BatchNorm_1/moving_variance exists
+model/detection/decoder/BatchNorm_1/moving_variance exists
+model/detection/decoder/BatchNorm_2/beta exists
+model/detection/decoder/BatchNorm_2/beta exists
+model/detection/decoder/BatchNorm_2/gamma exists
+model/detection/decoder/BatchNorm_2/gamma exists
+model/detection/decoder/BatchNorm_2/moving_mean exists
+model/detection/decoder/BatchNorm_2/moving_mean exists
+model/detection/decoder/BatchNorm_2/moving_variance exists
+model/detection/decoder/BatchNorm_2/moving_variance exists
+model/detection/decoder/BatchNorm_3/beta exists
+model/detection/decoder/BatchNorm_3/beta exists
+model/detection/decoder/BatchNorm_3/gamma exists
+model/detection/decoder/BatchNorm_3/gamma exists
+model/detection/decoder/BatchNorm_3/moving_mean exists
+model/detection/decoder/BatchNorm_3/moving_mean exists
+model/detection/decoder/BatchNorm_3/moving_variance exists
+model/detection/decoder/BatchNorm_3/moving_variance exists
+model/detection/decoder/BatchNorm_4/beta exists
+model/detection/decoder/BatchNorm_4/beta exists
+model/detection/decoder/BatchNorm_4/gamma exists
+model/detection/decoder/BatchNorm_4/gamma exists
+model/detection/decoder/BatchNorm_4/moving_mean exists
+model/detection/decoder/BatchNorm_4/moving_mean exists
+model/detection/decoder/BatchNorm_4/moving_variance exists
+model/detection/decoder/BatchNorm_4/moving_variance exists
+model/detection/decoder/P3-up/weights exists
+model/detection/decoder/P3-up/weights exists
+model/detection/decoder/P3-up/biases exists
+model/detection/decoder/P3-up/biases exists
+model/detection/decoder/P4-up/weights exists
+model/detection/decoder/P4-up/weights exists
+model/detection/decoder/P4-up/biases exists
+model/detection/decoder/P4-up/biases exists
+model/detection/decoder/P5-up/weights exists
+model/detection/decoder/P5-up/weights exists
+model/detection/decoder/P5-up/biases exists
+model/detection/decoder/P5-up/biases exists
+model/detection/decoder/P6-up/weights exists
+model/detection/decoder/P6-up/weights exists
+model/detection/decoder/P6-up/biases exists
+model/detection/decoder/P6-up/biases exists
+model/dgist_tl/decoder/head/conv1/weights exists
+model/dgist_tl/decoder/head/conv1/weights exists
+model/dgist_tl/decoder/head/conv1/biases exists
+model/dgist_tl/decoder/head/conv1/biases exists
+model/dgist_tl/decoder/head/conv2/weights exists
+model/dgist_tl/decoder/head/conv2/weights exists
+model/dgist_tl/decoder/head/conv2/biases exists
+model/dgist_tl/decoder/head/conv2/biases exists
+model/dgist_tl/decoder/head/conv3/weights exists
+model/dgist_tl/decoder/head/conv3/weights exists
+model/dgist_tl/decoder/head/conv3/biases exists
+model/dgist_tl/decoder/head/conv3/biases exists
+model/dgist_tl/decoder/head/conv4/weights exists
+model/dgist_tl/decoder/head/conv4/weights exists
+model/dgist_tl/decoder/head/conv4/biases exists
+model/dgist_tl/decoder/head/conv4/biases exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/class_BN0/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/dgist_8/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_8/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_8/dense/bias exists
+model/dgist_tl/decoder/head/dgist_8/dense/bias exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/class_BN1/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/dgist_16/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_16/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_16/dense/bias exists
+model/dgist_tl/decoder/head/dgist_16/dense/bias exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/class_BN2/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/dgist_32/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_32/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_32/dense/bias exists
+model/dgist_tl/decoder/head/dgist_32/dense/bias exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/class_BN3/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/dgist_64/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_64/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_64/dense/bias exists
+model/dgist_tl/decoder/head/dgist_64/dense/bias exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/beta exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/gamma exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/moving_mean exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/class_BN4/BatchNorm/moving_variance exists
+model/dgist_tl/decoder/head/dgist_128/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_128/dense/kernel exists
+model/dgist_tl/decoder/head/dgist_128/dense/bias exists
+model/dgist_tl/decoder/head/dgist_128/dense/bias exists
+model/dgist_tl/dense/kernel exists
+model/dgist_tl/dense/kernel exists
+model/dgist_tl/dense/bias exists
+model/dgist_tl/dense/bias exists
+[Weight restored.]
+/usr/lib/python3/dist-packages/scipy/misc/pilutil.py:482: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if issubdtype(ts, int):
+/usr/lib/python3/dist-packages/scipy/misc/pilutil.py:485: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  elif issubdtype(type(size), float):
+2021-11-15 16:56:40.079374: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2021-11-15 16:56:40.558420: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+Red		1.00
+Red		1.00
+7781.324148ms
+Red		1.00
+Red		1.00
+65.220118ms
+

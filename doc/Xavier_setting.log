@@ -1,0 +1,31 @@
+Cython version = 0.26.1
+opencv-python3 isn't installed
+OpenCV version = 3.3.1
+ujson isn't installed
+Pillow version = 5.1.0
+scikit-learn isn't installed
+matplotlib isn't installed
+gnuplot version isn't installed
+ghostscript version = 9.26
+pdfcrop version isn't installed
+Docker version = 18.09.2
+ROS version = melodic
+tensorflow-gpu version = 1.14.0+nv19.7
+
+CUDA version = 10.0,V10.0.326
+cuDNN version = 7.5.0
+TensorRT version = 5.1.6-1
+
+Number of GPUs = Detected 1 CUDA Capable device(s)
+
+GPU model = Xavier
+GPU RAM = 15.3 GB
+Memory Bus width = 256-bit
+CUDA cores = 512 cores
+
+
+sudo pip3 install -U grpcio absl-py py-cpuinfo portpicker mock h5py astor termcolor keras-applications keras-preprocessing wrapt google-pasta
+
+
+portpicker mock h5py astor termcolor keras-applications keras-preprocessing wrapt google-pasta
+sudo pip3 install -U 

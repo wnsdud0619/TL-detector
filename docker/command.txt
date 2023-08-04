@@ -1,0 +1,2 @@
+docker commit $(containername) $(imagename)
+docker commit v1.0 tl_classification:v2.0

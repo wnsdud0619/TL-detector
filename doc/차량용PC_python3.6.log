@@ -1,0 +1,42 @@
+IP Address = 192.168.3.118
+OS = Ubuntu 18.04.5 LTS(64-bit)
+Architecture = x86_64
+CPU = 12-core, Intel(R) Xeon(R) E-2176G CPU @ 3.70GHz
+Mainboard = Neousys Technology Inc., NVS-8208
+RAM = 31.2 GB
+
+Gcc version = 7.5.0
+G++ version = 7.5.0
+Cmake version = 3.10.2
+Python3 version = 3.6.9
+pip3 version = 9.0.1
+gast isn't installed
+protobuf isn't installed
+virtualenv version = 20.10.0
+numpy isn't installed
+setuptools isn't installed
+scipy isn't installed
+Cython isn't installed
+opencv-python3 isn't installed
+OpenCV version = 3.2.0
+ujson isn't installed
+Pillow isn't installed
+scikit-learn isn't installed
+matplotlib isn't installed
+gnuplot version = 5.2
+ghostscript version = 9.26
+pdfcrop version = 1.38
+Docker version = 20.10.10
+ROS version = melodic
+tensorflow-gpu isn't installed
+
+CUDA version = 10.2,V10.2.89
+cuDNN version = 7.6.5
+TensorRT isn't installed
+
+Number of GPUs = Detected 1 CUDA Capable device(s)
+
+GPU model = TITAN V
+GPU RAM = 11.7 GB
+Memory Bus width = 3072-bit
+CUDA cores = 5120 cores
