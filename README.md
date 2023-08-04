@@ -1,3 +1,7 @@
+#MODEL FILE download   
+https://drive.google.com/drive/folders/1alwd61B8s70ZzLMnUld1R-m2jFNpqeH_?usp=sharing   
+
+
 check model path, topic name, gpu memory   
 docker image is in Nas120/TrafficLight/4_code/AAP_v0.9.1/211102_AAP_v0.9.1 + trafficlight_code(final)/docker/tl.tar   
 
